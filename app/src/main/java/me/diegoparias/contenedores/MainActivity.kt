@@ -145,43 +145,34 @@ fun TaskCompleted() {
 }
 
 
-@Preview(showSystemUi = true)
+
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun PurpleSquares() {
-    Column(
-        modifier = Modifier
-            .background(Color.White)
-            .fillMaxSize(),
-
-    )
-    {
-        Row(modifier = Modifier
-            .padding(all = 20.dp)
-
-
-        ){
-            Text(
-                text = "Text Composable",
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                modifier = Modifier
-                    .background(Color(0xFFEADDFF))
-                    .padding(all = 4.dp)
-
-
-            )
-            Text(
-                text = "Text Composable",
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                modifier = Modifier
-                    .background(Color(0xFFD0BCFF))
-                    .padding(all = 4.dp)
-
-
-            )
-
+fun Composable(){
+    Column(modifier = Modifier.fillMaxSize()) {
+        Row(modifier = Modifier.weight(1f)) {
+            Column(modifier = Modifier.background(Color(0xFFEADDFF)).weight(1f).fillMaxSize()) {
+                Text("Text Composabe")
+                Text("Display text and follows the recomended Material Design guidlines"
+                )
+            }
+            Column(modifier = Modifier.background(Color(0xFFD0BCFF)).weight(1f).fillMaxSize()) {
+                Text("Text Composabe")
+                Text("Display text and follows the recomended Material Design guidlines"
+                )
+            }
         }
-
+        Row(modifier = Modifier.weight(1f)) {
+            Column(modifier = Modifier.background(Color(0xFFD0BCFF)).weight(1f).fillMaxSize()) {
+                Text("Text Composabe")
+                Text("Display text and follows the recomended Material Design guidlines"
+                )
+            }
+            Column(modifier = Modifier.background(Color(0xFFEADDFF)).weight(1f).fillMaxSize()) {
+                Text("Text Composabe")
+                Text("Display text and follows the recomended Material Design guidlines"
+                )
+            }
+        }
     }
 }
