@@ -44,7 +44,7 @@ fun ContentScreen(){
 
     Column(modifier = Modifier
         .background(Color.LightGray)
-        .padding(all=18.dp)
+        .padding(all = 18.dp)
         .fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -56,7 +56,7 @@ fun ContentScreen(){
         Row(modifier = Modifier
             .background(Color.Gray)
             .padding(all = 18.dp)
-            . fillMaxWidth(),
+            .fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween
 
         ){
@@ -152,13 +152,11 @@ fun PurpleSquares() {
         modifier = Modifier
             .background(Color.White)
             .fillMaxSize(),
-        verticalArrangement = Arrangement.SpaceBetween,
-        horizontalAlignment = Alignment.CenterHorizontally
 
     )
     {
         Row(modifier = Modifier
-            .padding(all = 20.dp),
+            .padding(all = 20.dp)
 
 
         ){
