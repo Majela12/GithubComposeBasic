@@ -17,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -71,6 +72,7 @@ fun ContentScreen(){
                     .padding(all = 8.dp)
 
             )
+
             Text(
                 text = "Configuracion",
                 fontSize = 25.sp,
@@ -110,4 +112,59 @@ fun ContentScreen(){
 
 
 
+}
+
+@Preview(showSystemUi = true)
+@Composable
+fun TaskScreen(){
+    Column(modifier = Modifier
+        .background(Color.White)
+
+    ){
+
+    }
+}
+
+
+@Preview(showSystemUi = true)
+@Composable
+fun PurpleSquares() {
+    Column(
+        modifier = Modifier
+            .background(Color.White)
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.SpaceBetween,
+        horizontalAlignment = Alignment.CenterHorizontally
+
+    )
+    {
+        Row(modifier = Modifier
+            .padding(all = 20.dp),
+
+
+        ){
+            Text(
+                text = "Text Composable",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier
+                    .background(Color(0xFFEADDFF))
+                    .padding(all = 4.dp)
+
+
+            )
+            Text(
+                text = "Text Composable",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier
+                    .background(Color(0xFFD0BCFF))
+                    .padding(all = 4.dp)
+
+
+            )
+
+        }
+
+    }
 }
